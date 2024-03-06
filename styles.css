@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Zen+Dots&display=swap');
+body{
+    font-family: 'Zen Dots', cursive;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5f32ff+0,9e2ff9+50,ff89fd+100 */
+background: rgb(95,50,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(95,50,255,1) 0%, rgba(158,47,249,1) 50%, rgba(255,137,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(95,50,255,1) 0%,rgba(158,47,249,1) 50%,rgba(255,137,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(95,50,255,1) 0%,rgba(158,47,249,1) 50%,rgba(255,137,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f32ff', endColorstr='#ff89fd',GradientType=1 ); /* IE6-9 */
+
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataque{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background-color: #6C4AB6;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: darkslateblue;
+}
+
+#seleccionar-ataque{
+    /*display: flex; ya no, se puso en el js*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    background-color: rgb(95,50,255);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+} 
+
+#Mensajes {
+    width: 200px;
+    background-color: #6C4AB6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    border: none;
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px 0px;
+}
+
+/* 
+Responsive design */
+@media (max-width: 560px){
+    .tarjetas{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

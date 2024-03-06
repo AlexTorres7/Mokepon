@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">Mokepon! 🔥💧🌱</h1>
+
+        <h2 class="subtitulo">Elige tu mascota</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+            <!-- <input type="radio" name="mascota" id="hypo">
+            <label for="hypo" class="tarjeta-de-mokepon">
+                <p>Hypo</p>
+                <img src="img/hypo.jpg" alt="Hypo">
+            </label>
+    
+            <input type="radio" name="mascota" id="perro">
+            <label for="perro" class="tarjeta-de-mokepon">
+                <p>Perro</p>
+                <img src="img/perro.jpg" alt="Hypo"> 
+            </label>
+            
+            <input type="radio" name="mascota" id="fenix">
+            <label for="fenix" class="tarjeta-de-mokepon">
+                <p>Fenix</p>
+                <img src="img/fenix.jpg" alt="Hypo">
+            </label> -->
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo">Recorre el mapa con tu Mokepon</h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+        </div>
+    </section>
+
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">Mokepon! 🔥💧🌱</h1>
+        <h2 class="subtitulo">Elige tu ataque</h2>
+
+       <div id='contenedorAtaques' class="tarjetas-ataques">
+            <!-- <button id="boton-fuego" class="boton-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-ataque">Agua 💧</button>
+            <button id="boton-tierra" class="boton-ataque">Tierra 🌱</button> -->
+        </div> 
+
+
+        <div id="Mensajes">
+            <p id="resultado">Mucha suerte</p>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>          
+
+
+        <div class="ataques">
+            <div>
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador">🐾</p>
+                <div id="ataque-Del-Jugador"></div>
+             </div>
+
+            <div>
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo">🐾</p>
+                <div id="ataque-Del-Enemigo"></div>    
+            </div>
+        </div>
+    </section>
+    <script src="js/codigo.js"></script>
+</body>
+
+</html>
